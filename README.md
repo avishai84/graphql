@@ -90,4 +90,25 @@ enum Language {
   }
 ```
 
+#Demo
+
+```ts 
+    {
+      viewer {
+        login
+        name
+      }
+    }
+    
+  ### Returned data:
+  
+  {
+  "data": {
+    "viewer": {
+      "login": "avishai84",
+      "name": null
+    }
+  }
+}
+```
 
