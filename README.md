@@ -59,3 +59,34 @@ author (id: 100) { // asking for the author info with passing an ID
 
 ```
 
+#Schema
+
+### Types: Int | Float | String | Boolean | ID
+
+```ts
+type Author {
+  id: ID;
+  firstName: string;
+  rating: Float;
+  numOfCourses: Int
+}
+
+enum Language {
+  ENGLISH
+  HEBREW
+  SPANISH
+}
+
+```
+#Query and Mutation Types
+#### Query is an entery point for the service request
+#### Mutation is the object data that can be mutate. (add, delete)
+
+```ts
+  schema {
+    query:Query
+    mutation: Mutation
+  }
+```
+
+
