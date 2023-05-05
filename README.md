@@ -1,4 +1,5 @@
 # GraphQL
+[GraphQL Explorer](https://docs.github.com/en/graphql/overview/explorer)
 
 ## GraphQL query language for your API
 
