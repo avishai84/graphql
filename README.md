@@ -111,4 +111,21 @@ enum Language {
   }
 }
 ```
-
+### GraphQL Query example:
+##### This query consists of three components:
+```ts
+    query GetAllFilms { // GetallFilms is the operation name that clients can set. This can be useful for debugging issues.
+      allFilms { // allFilms is field exposed endpoint on the root node. It is a complex types of Film that combines several scalar values into a single unit.
+      // allFilms is also a field that combines the fields nested inside it.
+        films {
+          title // title, episodeID, director, etc. are fields.
+          episodeID // These are units of data that you are requesting to appear in the response data. 
+          openingCrawl
+          director
+          producers
+          releaseDate
+        }
+      }
+    }
+    
+```
